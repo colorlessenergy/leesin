@@ -1,0 +1,15 @@
+- title: Sonic Wave / Resonating Strike
+  desc:  Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it hits. if a enemy is hit he can use Resonating strike which dashes to the enemy
+  img: images/abilities/q.png
+
+- title: Safeguard / Iron Will
+  desc: Lee sin dashes to a target alley and shielding himself from damage and if the target alley is a champion they also get shielded. For 4 seconds, Lee Sin gains Life Steal and Spell Vamp if casted again.
+  img: images/abilities/w.png
+
+- title: Tempest / Cripple
+  desc: Lee sin smashes the ground, sending out shockwaves that deals magic damage and reveals enemy units that were hit. if recasted reduces enemy movement speed for 4 secs and movement speed gradually restores.
+  img: images/abilities/e.png
+
+- title: Dragon's Rage
+  desc: Lee sin performs a round house kick which sends his target flying back and deals damage to the target and any enemies who collide. This technique was taught to him by Jesse Perring.
+  img: images/abilities/r.png
