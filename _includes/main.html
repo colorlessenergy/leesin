@@ -1,0 +1,13 @@
+<!-- main content -->
+<!-- images of lee sin -->
+
+<main>
+  <h2>Forms of Lee sin</h2>
+  {% for skin in site.data.leesin %}
+  <div style="background-image: url({{ skin.img }})">
+    <h3>{{ skin.title }}</h3>
+    <p>{{ skin.desc }}</p>
+  </div>
+  {% endfor %}
+  <h2><a href="http://leagueoflegends.wikia.com/wiki/Lee_Sin">more forms ></a></h2>
+</main>
