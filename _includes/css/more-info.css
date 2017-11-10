@@ -1,0 +1,52 @@
+aside div:first-child {
+  margin-left: 10px;
+  max-width: 600px;
+}
+
+aside div h2 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+aside div p {
+  line-height: 1.45;
+}
+
+aside div p span {
+  font-size: 3px;
+}
+
+aside div:nth-child(2) {
+  text-align: right;
+}
+
+aside div img {
+  width: 100%;
+}
+
+@media screen and (min-width: 961px) {
+  aside div:first-child {
+    margin-left: 50px;
+    max-width: 600px;
+  }
+
+  aside div h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  aside div p {
+    font-size: 20px;
+  }
+
+  aside div img {
+    width: 600px;
+  }
+
+}
