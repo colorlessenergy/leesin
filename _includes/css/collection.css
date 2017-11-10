@@ -1,0 +1,63 @@
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+main h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+main .gallery-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main .gallery-wrapper div {
+  background-position: 86% 26%;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 500px;
+  text-transform: uppercase;
+  width: 98%;
+  letter-spacing: 1px;
+  transition: transform 0.5s ease;
+}
+
+main .gallery-wrapper div:last-child {
+  background-position: 61% 26%;
+}
+
+main .gallery-wrapper div:hover {
+  transform: scale(1.02)
+}
+
+main .gallery-wrapper div h3, main .gallery-wrapper div p {
+  margin: 0 0 0 40px;
+}
+
+main .gallery-wrapper div h3 {
+  font-size: 30px;
+}
+
+main .gallery-wrapper div p {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 961px) {
+  main .gallery-wrapper {
+    justify-content: center;
+    flex-flow: wrap;
+    max-width: 1300px;
+  }
+
+  main .gallery-wrapper div {
+    width: 48%;
+  }
+}
