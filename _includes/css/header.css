@@ -1,9 +1,61 @@
 header {
   background-image: url(images/leesin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 584px;
   height: 100vh;
 }
 
-header h1 {
+header .intro {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  text-transform: uppercase;
+}
+
+header .intro div {
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+header .intro h1 {
   color: #fff;
-  letter-spacing: 0.1px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 61px;
+}
+
+header .intro p a {
+  border: 0.5px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 961px) {
+  header {
+    background-position: initial;
+  }
+
+  header .intro div {
+    margin-left: 125px;
+  }
+
+  header .intro h1 {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 61px;
+  }
+
+  .menu-show ul li {
+    font-size: 66px;
+    letter-spacing: 2px;
+    line-height: 85px;
+    text-transform: uppercase;
+  }
 }
