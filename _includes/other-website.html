@@ -1,0 +1,9 @@
+<section>
+  <h2>A Collection of Websites</h2>
+  {% for websites in site.data.other-websites %}
+  <div style="background-image: url({{ websites.img }})">
+    <h4>{{ websites.title }}</h4>
+    <p>{{ websites.desc }}</p>
+  </div>
+  {% endfor %}
+</section>
