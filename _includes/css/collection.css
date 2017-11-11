@@ -35,17 +35,17 @@ main .gallery-wrapper div.moveimage, section .other-websites-gallery a div.movei
   transform: translate3d(0, 0, 0);
 }
 
-main .gallery-wrapper div:nth-child(1), section .other-websites-gallery a div:nth-child(1) {
+main .gallery-wrapper div:nth-child(1), section .other-websites-gallery a:nth-child(1) div {
   transition-delay: .15s;
 }
 
-main .gallery-wrapper div:nth-child(2), section .other-websites-gallery a div:nth-child(2) {
+main .gallery-wrapper div:nth-child(2), section .other-websites-gallery a:nth-child(2) div {
   transition-delay: .3s;
 }
-main .gallery-wrapper div:nth-child(3), section .other-websites-gallery a div:nth-child(3) {
+main .gallery-wrapper div:nth-child(3), section .other-websites-gallery a:nth-child(3) div {
   transition-delay: .4s;
 }
-main .gallery-wrapper div:nth-child(4), section .other-websites-gallery a div:nth-child(4) {
+main .gallery-wrapper div:nth-child(4) {
   transition-delay: .5s;
 }
 
@@ -128,5 +128,63 @@ section .other-websites-gallery a {
 @media screen and (min-width: 961px) {
   section .other-websites-gallery a {
     width: 50%;
+  }
+}
+
+/*contact page*/
+
+.contact-info ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style-type: none;
+  max-width: 913px;
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+.contact-info ul li p:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact-info ul li p:last-child {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+}
+
+.contact-info ul li p:last-child a {
+  color: #333;
+  text-decoration: none;
+}
+
+.touch p {
+  color: #009688;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 20px;
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+.touch h2 {
+  font-size: 20px;
+  margin: 0 0 0 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 961px) {
+
+  .contact-info ul {
+    flex-direction: initial;
+  }
+
+  .touch h2 {
+    font-size: 45px;
   }
 }

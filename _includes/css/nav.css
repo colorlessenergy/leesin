@@ -1,4 +1,4 @@
-header nav {
+nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -8,11 +8,11 @@ header nav {
   z-index: 2;
 }
 
-header nav .container-menu, header nav h1 {
+nav .container-menu, nav h1 {
   margin: 0 30px;
 }
 
-header nav h1 a {
+nav h1 a {
   letter-spacing: -0.1px;
   color: #fff;
   text-decoration: none;
@@ -83,6 +83,15 @@ header nav h1 a {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+.contact h1 a {
+  color: #333;
+}
+
+.contact .container-menu .bar1, .contact .container-menu .bar2, .contact .container-menu .bar3 {
+  background-color: #333;
 }
 
 @media screen and (min-width: 961px) {
