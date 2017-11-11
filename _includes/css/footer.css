@@ -1,0 +1,35 @@
+footer {
+  background-color: #242424;
+  color: #fff;
+}
+
+footer .contact h2 {
+  font-size: 58px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 0 30px;
+  padding: 80px 0 0 0;
+}
+
+footer .contact p {
+  color: #545353;
+  margin-left: 30px;
+}
+
+footer .contact p a {
+  color: #b1b0b0;
+  text-decoration: none;
+}
+
+footer .contact p a:hover {
+  color: #efebeb;
+}
+
+footer .foot p {
+  margin: 5px 0 10px 30px;
+}
+
+footer .foot p:last-child {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
