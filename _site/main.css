@@ -25,24 +25,7 @@ header .intro {
   text-transform: uppercase;
 }
 
-@keyframes slidein {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -10%, 0);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounce {
-  0%{ transform:scale(0); opacity:0;}
-  50%{ transform:scale(1.3); opacity:0.4; }
-  75%{ transform:scale(0.9); opacity:0.7;}
-  100%{ transform:scale(1); opacity:1;}
-}
 header .intro div {
   margin-bottom: 40px;
   margin-left: 30px;
@@ -67,6 +50,27 @@ header .intro p a {
   text-decoration: none;
   font-weight: 600;
 }
+
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  0%{ transform:scale(0); opacity:0;}
+  50%{ transform:scale(1.3); opacity:0.4; }
+  75%{ transform:scale(0.9); opacity:0.7;}
+  100%{ transform:scale(1); opacity:1;}
+}
+
 
 @media screen and (min-width: 961px) {
   header {
@@ -220,8 +224,23 @@ aside div:nth-child(2) {
 }
 
 aside div img {
+  animation: 1.4s slidefromRB linear;
   width: 100%;
 }
+
+
+@keyframes slidefromRB {
+  0% {
+    opacity: 0;
+    transform: translate3d(30%, 30%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 @media screen and (min-width: 961px) {
   aside div:first-child {
@@ -274,9 +293,28 @@ main .gallery-wrapper div, section .other-websites-gallery a .bg {
   justify-content: flex-end;
   height: 500px;
   text-transform: uppercase;
+  transform: translate3d(0, 50%, 0);
   width: 98%;
   letter-spacing: 1px;
   transition: transform 0.5s ease;
+}
+
+main .gallery-wrapper div.moveimage, section .other-websites-gallery a div.moveimage {
+  transform: translate3d(0, 0, 0);
+}
+
+main .gallery-wrapper div:nth-child(1), section .other-websites-gallery a div:nth-child(1) {
+  transition-delay: .15s;
+}
+
+main .gallery-wrapper div:nth-child(2), section .other-websites-gallery a div:nth-child(2) {
+  transition-delay: .3s;
+}
+main .gallery-wrapper div:nth-child(3), section .other-websites-gallery a div:nth-child(3) {
+  transition-delay: .4s;
+}
+main .gallery-wrapper div:nth-child(4), section .other-websites-gallery a div:nth-child(4) {
+  transition-delay: .5s;
 }
 
 main .gallery-wrapper div:last-child {
