@@ -241,7 +241,7 @@ main .gallery-wrapper {
   flex-direction: column;
 }
 
-main .gallery-wrapper div {
+main .gallery-wrapper div, section .other-websites-gallery a .bg {
   background-position: 86% 26%;
   background-size: cover;
   color: #fff;
@@ -263,15 +263,15 @@ main .gallery-wrapper div:hover {
   transform: scale(1.02)
 }
 
-main .gallery-wrapper div h3, main .gallery-wrapper div p {
+main .gallery-wrapper div h3, main .gallery-wrapper div p, section .other-websites-gallery a .bg h3, section .other-websites-gallery a .bg p {
   margin: 0 0 0 40px;
 }
 
-main .gallery-wrapper div h3 {
+main .gallery-wrapper div h3, section .other-websites-gallery a .bg h3 {
   font-size: 30px;
 }
 
-main .gallery-wrapper div p {
+main .gallery-wrapper div p, section .other-websites-gallery a .bg p {
   margin-bottom: 40px;
 }
 
@@ -284,6 +284,56 @@ main .gallery-wrapper div p {
 
   main .gallery-wrapper div {
     width: 48%;
+  }
+}
+
+/*other websites gallery sections*/
+
+section h2.col-title {
+  text-align: center;
+}
+
+section .other-websites-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+section .other-websites-gallery a .bg {
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+section .other-websites-gallery .bg::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 1s ease;
+}
+
+section .other-websites-gallery .bg:hover::after  {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+section .other-websites-gallery .bg:hover div {
+  position: relative;
+  z-index: 3;
+}
+
+section .other-websites-gallery a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 961px) {
+  section .other-websites-gallery a {
+    width: 50%;
   }
 }
 

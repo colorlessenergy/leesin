@@ -1,9 +1,15 @@
 <section>
-  <h2>A Collection of Websites</h2>
-  {% for websites in site.data.other-websites %}
-  <div style="background-image: url({{ websites.img }})">
-    <h4>{{ websites.title }}</h4>
-    <p>{{ websites.desc }}</p>
+  <h2 class="col-title">A Collection of Websites</h2>
+  <div class="other-websites-gallery">
+    {% for websites in site.data.other-websites %}
+    <a href="{{ websites.link }}">
+      <div class="bg" style="background-image: url({{ websites.img }})">
+        <div>
+          <h3>{{ websites.title }}</h3>
+          <p>{{ websites.desc }}</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
   </div>
-  {% endfor %}
 </section>
