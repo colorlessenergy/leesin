@@ -2,12 +2,14 @@
 <article>
   <section>
     {% for ability in site.data.abilities %}
-    <div>
-      <img src="{{ ability.img }}" alt="">
-      <h3>{{ ability.title }}</h3>
-      <p>{{ ability.desc }}</p>
+    <div class="wrapper-a">
+      <div>
+        <img src="{{ ability.img }}" alt="">
+        <h3>{{ ability.title }}</h3>
+        <p>{{ ability.desc }}</p>
+      </div>
     </div>
     {% endfor %}
   </section>
-  <p><a href="http://leagueoflegends.wikia.com/wiki/Lee_Sin">More Info</a></p>
+  <p class="more-info"><a href="http://leagueoflegends.wikia.com/wiki/Lee_Sin">More Info</a></p>
 </article>
